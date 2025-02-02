@@ -1,3 +1,28 @@
-local CoreGui = game:GetService("StarterGui")CoreGui:SetCore("SendNotification", {    Title = "土豆中心",    Text = "欢迎使用土豆中心",    Duration = 5, })print("正在把土豆丝削皮(反挂机)")		local vu = game:GetService("VirtualUser")		game:GetService("Players").LocalPlayer.Idled:connect(function()		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		   wait(1)		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)		end)local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()local Window = OrionLib:MakeWindow({Name = "土豆中心", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用土豆中心", ConfigFolder = "欢迎使用土豆中心"})local about = Window:MakeTab({    Name = "公告",    Icon = "rbxassetid://16060333448",    PremiumOnly = false})about:AddParagraph("作者:炸土豆")about:AddParagraph("辅助作者:半只妹控")
-local Tab =Window:MakeTab({    Name = "通用",	Icon = "rbxassetid://1000006607",	PremiumOnly = false})
-Tab:AddButton({   Name = "飞行",   Callback = function()    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\83\76\120\100\97\75\112\119\34\41\40\41\10")()  	end    })
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/useranewrff/roblox/main/%E9%BB%91%E9%87%91.lua"))()
+
+local Window = OrionLib:MakeWindow({Name = "导管中心选择版本", HidePremium = false, SaveConfig = true,IntroText = "原神启动", ConfigFolder = "原神启动"})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "加载中"; Text ="加载中"; Duration = 5; })
+
+local about = Window:MakeTab({
+    Name = "土豆制作",
+    Icon = "rbxassetid://1000006607",
+    PremiumOnly = false
+
+})
+
+about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
+
+local Tab =Window:MakeTab({
+	Name = "公告",
+	Icon = "rbxassetid://1000006607",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "td中心QQ群",
+	Callback = function()
+     setclipboard("839696299")
+  	end
+})
