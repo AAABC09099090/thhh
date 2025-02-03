@@ -1,28 +1,52 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/useranewrff/roblox/main/%E9%BB%91%E9%87%91.lua"))()
+local Window = OrionLib:MakeWindow({Name = "LX中心", HidePremium = false, HidePremium = false, SaveConfig = true,IntroText = "欢迎使用", ConfigFolder = "欢迎使用"})
 
-local Window = OrionLib:MakeWindow({Name = "导管中心选择版本", HidePremium = false, SaveConfig = true,IntroText = "原神启动", ConfigFolder = "原神启动"})
-
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "加载中"; Text ="加载中"; Duration = 5; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "正在加载"; Text ="正在加载"; Duration = 5; })
 
 local about = Window:MakeTab({
-    Name = "土豆制作",
+    Name = "公告",
     Icon = "rbxassetid://1000006607",
     PremiumOnly = false
-
 })
 
+about:AddParagraph("此脚本永久免费")
+about:AddParagraph("主作者:L90")
+about:AddParagraph("副作者:NE")
+about:AddParagraph("Q群:1015537020")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 
 local Tab =Window:MakeTab({
-	Name = "公告",
+	Name = "通用",
 	Icon = "rbxassetid://1000006607",
 	PremiumOnly = false
 })
+ 
+Tab:AddButton({ 
+   Name = "飞行", 
+   Callback = function()
+             loadstring(game:HttpGet("https://pastebin.com/raw/Vyx5g54B"))()
+end
+})
 
 Tab:AddButton({
-	Name = "td中心QQ群",
-	Callback = function()
-     setclipboard("839696299")
-  	end
+    Name = "踏空",
+    Callback = function()
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+end
+})
+
+Tab:AddButton({
+    Name = "一拳超人",
+    Callback = function()
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_rf6iQURzu1fqrytcnLBAvW34C9N55kS9g9G3CKz086rC47M6632sEd4ZZYB0AYgV.lua.txt'))()
+end
+})
+
+
+Tab:AddButton({
+    Name = "键盘脚本",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+end
 })
