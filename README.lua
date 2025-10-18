@@ -11,7 +11,6 @@ local about = Window:MakeTab({
 
 about:AddParagraph("此脚本永久免费")
 about:AddParagraph("主作者:L90")
-about:AddParagraph("副作者:NE")
 about:AddParagraph("Q群:1015537020")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
 about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
