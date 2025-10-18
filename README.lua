@@ -1,4 +1,4 @@
-local OrionLib = https://raw.githubusercontent.com/useranewrff/roblox/main/%E9%BB%91%E9%87%91.lua"))(
+local OrionLib = https://raw.githubusercontent.com/AAABC09099090/thhh/refs/heads/main/L
 local Window = OrionLib:MakeWindow({Name = "LX中心", HidePremium = false, HidePremium = false, SaveConfig = true,IntroText = "欢迎使用", ConfigFolder = "欢迎使用"})
 
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "正在加载"; Text ="正在加载"; Duration = 5; })
